@@ -412,3 +412,48 @@ body{
     font-weight: 400;
 }
 /* Site-footer */
+
+/* Animation */
+.navbar-animation{
+    position: relative;
+}
+.navbar-animation::before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: 5px solid #790FF1;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: -5%;
+    animation: scale 3s ease infinite;
+}
+@keyframes scale {
+    to{
+        transform: scale(0);
+    }
+    from{
+        transform: scale(1);
+    }
+}
+.navbar-animation::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    border: 5px solid #790FF1;
+    position: absolute;
+    top: 90%;
+    right:-5%;
+    animation: rotate 3s ease infinite;
+}
+@keyframes rotate {
+    to{
+        transform: rotate(0);
+    }
+    from{
+        transform: rotate(360deg);
+    }
+}
+/* Animation */
