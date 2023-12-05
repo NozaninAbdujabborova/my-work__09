@@ -1,0 +1,9 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body-color: #151437;
+        --text-color: #fff;
+        --dots: #EBEBEB;
+        --footer-link: #7177F1;
+        --tab-text: #151437;
+    }
+}
